@@ -255,10 +255,10 @@
 		84E1F1742A1E11EE00D5C368 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				84E1F1082A1E061F00D5C368 /* ContentView.swift */,
 				845D14402A1E570E005CEB32 /* Profiles */,
 				845D14372A1E5056005CEB32 /* Categories */,
 				844BC47E2A1E47EE00147B16 /* Hikes */,
-				84E1F1082A1E061F00D5C368 /* ContentView.swift */,
 				844BC4682A1E28F600147B16 /* Landmarks */,
 				844BC4672A1E28D500147B16 /* Helpers */,
 			);
