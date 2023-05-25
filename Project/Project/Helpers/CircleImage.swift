@@ -1,6 +1,6 @@
 //
 //  CircleImage.swift
-//  Landmarks
+//  Project
 //
 //  Created by Malik on 25/05/2023.
 //
@@ -9,11 +9,15 @@ import SwiftUI
 
 struct CircleImage: View {
     var image: Image
+    
     var body: some View {
         image
-            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+            .resizable()
+            .clipShape(Rectangle())
+            .frame(width: 300, height: 300)
             .overlay {
-                Circle().stroke(.white, lineWidth: 4)
+                Rectangle().stroke(.white, lineWidth: 4)
+                
             }
             .shadow(radius: 7)
     }
@@ -21,6 +25,6 @@ struct CircleImage: View {
 
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImage(image: Image("turtlerock"))
+        CircleImage(image: Image("spiderman"))
     }
 }
